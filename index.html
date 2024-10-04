@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <!-- ! Font Awesome Library -->
   <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <!-- ! Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- ! Google Fonts -->
@@ -23,6 +24,18 @@
 </head>
 
 <body>
+  <header>
+    <nav>
+      <form action="">
+        <select name="data" id="data">
+          <option value="Event">Event</option>
+          <option value="Birthday">Birthday</option>
+        </select>
+        <input type="date" name="date" id="date" lang="en">
+        <button>Ok</button>
+      </form>
+    </nav>
+  </header>
   <main>
     <img src="images/shape-1.svg" class="shape1" alt="">
     <img src="images/shape-2.svg" class="shape2" alt="">
@@ -33,18 +46,18 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-xl-5 col-lg-6 col-md-6">
-          <div class="logo img-wrapper">
+          <div class="logo img-wrapper wow fadeInLeft" data-wow-delay=".2s">
             <img src="images/img-1.svg" alt="Logo">
           </div>
         </div>
         <div class="col-xl-7 col-lg-6 col-md-6 odd-col">
           <div class="content-wrapper">
-            <h1>Coming Soon</h1>
-            <p>The and greater, all hasn't revisit general up by her The soon my himself including it those from
-              everything you
-              necessary will didn't little.
+            <h1 class="wow fadeInDown" data-wow-delay=".2s">Coming Soon</h1>
+            <p class="wow fadeInUp para" data-wow-delay=".4s">The and greater, all hasn't revisit general up by her The
+              soon
+              my himself including it those from everything you necessary will didn't little.
             </p>
-            <div class="timer">
+            <div class="timer wow fadeInLeft" data-wow-delay=".2s">
               <div class="timer-item">
                 <span id="days">00</span>
                 <span class="dot">:</span>
@@ -65,7 +78,7 @@
                 <p>Seconds</p>
               </div>
             </div>
-            <form method="get">
+            <form method="get" class="wow fadeInDown" data-wow-delay=".6s">
               <input type="email" name="email" id="email" placeholder="Enter Mail Address" required
                 autocomplete="email">
               <button>Add Waiting List</button>
@@ -79,6 +92,8 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- ! This Render Icon As SVG... -->
   <script src="js/all.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
