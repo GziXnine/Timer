@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    /* Projects */
+    "incremental": true,                              /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
+    "composite": true,                                /* Enable constraints that allow a TypeScript project to be used with project references. */
+    "tsBuildInfoFile": "./.tsbuildinfo",              /* Specify the path to .tsbuildinfo incremental compilation file. */
+
+    /* Language and Environment */
+    "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "commonjs",                                /* Specify what module code is generated. */
+    "lib": ["es2016", "DOM"],                          /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+    "jsx": "preserve",                                /* Specify what JSX code is generated. */
+
+    /* Modules */
+    "rootDir": "js",                                  /* Specify the root folder within your source files. */
+    "outDir": "js",                                 /* Specify an output folder for all emitted files. */
+    "moduleResolution": "node",                         /* Specify how TypeScript looks up a file from a given module specifier. */
+
+    /* JavaScript Support */
+    "allowJs": true,                                   /* Allow JavaScript files to be a part of your program. Use the 'checkJs' option to get errors from these files. */
+    "checkJs": true,                                   /* Enable error reporting in type-checked JavaScript files. */
+
+    /* Emit */
+    "sourceMap": true,                                 /* Create source map files for emitted JavaScript files. */
+    "removeComments": true,                            /* Disable emitting comments. */
+    
+    /* Interop Constraints */
+    "esModuleInterop": true,                            /* Emit additional JavaScript to ease support for importing CommonJS modules. */
+    "forceConsistentCasingInFileNames": true,           /* Ensure that casing is correct in imports. */
+
+    /* Type Checking */
+    "strict": true,                                     /* Enable all strict type-checking options. */
+    "noImplicitAny": true,                             /* Enable error reporting for expressions and declarations with an implied 'any' type. */
+    "noUnusedLocals": true,                            /* Enable error reporting when local variables aren't read. */
+    "noUnusedParameters": true,                        /* Raise an error when a function parameter isn't read. */
+    "noImplicitReturns": true,                         /* Enable error reporting for codepaths that do not explicitly return in a function. */
+    "noImplicitOverride": true,                        /* Ensure overriding members in derived classes are marked with an override modifier. */
+    "skipLibCheck": true                               /* Skip type checking all .d.ts files. */
+  },
+  "include": ["./js/**/*.ts"],                        /* Specify which files to include in the compilation. */
+  "exclude": ["node_modules", "**/*.spec.ts"]        /* Exclude unnecessary files and directories from compilation. */
+}
